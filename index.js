@@ -43,7 +43,7 @@ class Square extends Polygon{
       let side2 = this.arr[1];
       let side3 = this.arr[2];
       let side4 = this.arr[3];
-    return side1 == side2 == side3 == side4;
+    return (side1 == side2) && (side2 == side3) && (side3 == side4);
     }
     
   }
