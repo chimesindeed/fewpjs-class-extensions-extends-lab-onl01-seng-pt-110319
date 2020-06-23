@@ -28,7 +28,14 @@ class Polygon{
 class Triangle extends Polygon {
   
   get isValid(){
-    return this.countSides === 3;
+    if (this.countSides === 3){
+      let side1 = this.arr[0];
+      let side2 = this.arr[1];
+      let side3 = this.arr[2];
+    
+    return ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1));
+  
+    }
   }
   
   
