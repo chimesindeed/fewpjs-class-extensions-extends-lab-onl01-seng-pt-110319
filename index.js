@@ -1,8 +1,6 @@
 // Your code here
 /*
    
-    Use the get keyword to make a getter method perimeter that calculates the sum of each side (each index in the array) of the polygon. This method will become accessible to its child classes.
-
     Define a Triangle class that inherits from Polygon.
 
     It will automatically have access to count and perimeter inherited from Polygon.
@@ -25,4 +23,13 @@ class Polygon{
     return sum;
     
   }
+}
+
+class Triangle extends Polygon {
+  
+  get isValid(){
+    return this.countSides === 3;
+  }
+  
+  
 }
