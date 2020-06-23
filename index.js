@@ -1,13 +1,9 @@
 // Your code here
 /*
-   
-    Define a Triangle class that inherits from Polygon.
-
-    It will automatically have access to count and perimeter inherited from Polygon.
-
-    Use the get keyword to make a getter method isValid that checks if the given 3 sides for a triangle is valid.
+  
 
 */
+
 class Polygon{
   constructor(arr){
     this.arr = arr;
@@ -39,4 +35,9 @@ class Triangle extends Polygon {
   }
   
   
+}
+class Square extends Polygon{
+  get isValid(){
+    
+  }
 }
